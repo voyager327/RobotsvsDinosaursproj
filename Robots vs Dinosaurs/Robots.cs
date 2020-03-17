@@ -15,16 +15,14 @@ namespace Robots_vs_Dinosaurs
         public string Weapon;
         public int AttackPower;
      
-
         public Robots(string Name, int Health, int PowerLevel, string weapon, int AttackPower)
-        //Constructors- List of Characters Consisting Robot 
+        //Constructors-  
         {
             this.Name = Name;
             this.Health = Health;                
             this.PowerLevel = PowerLevel;
             this.Weapon = weapon;
             this.AttackPower = AttackPower;
-
         }
         public void Attack(Dinosaurs dino)
         {

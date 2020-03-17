@@ -18,14 +18,16 @@ namespace Robots_vs_Dinosaurs
         
         public fleet()
         {
-             Robots Maximus = new Robots("Maximus", 120, 100, "Laser", 50);
-             Robots Primus = new Robots("Primus", 110, 100, "Cannon", 20);
-             Robots Ultima = new Robots("Ultima", 130, 100, "Sword", 25);
+             Robots Maximus = new Robots("Maximus", 100, 160, "Laser", 50);
+             Robots Primus = new Robots("Primus", 100, 150, "Cannon", 20);
+            Robots Ultima = new Robots("Ultima", 100, 120, "Sword", 25);
+         //Maximus AttackPower is equal to 50 points
+         //Primus Attack Power is equal to 20 points 
+        //Ultima Attack Power is equal to 25 points
             robots.Add(Maximus);
             robots.Add(Primus);
             robots.Add(Ultima);
         }
-
         public void Run()
         {
 

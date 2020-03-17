@@ -10,10 +10,13 @@ namespace Robots_vs_Dinosaurs
     {
         fleet robotFleet = new fleet();
         Herd dinoHerd = new Herd();
-
-        public double PickFighter(fleet Robots)
+        public int sides;
+        public int rematch;
+        public double PickFighter(int sides)
         {
-            Console.WriteLine("Please Select RoboFighter.\n1) Maximus\n2 Primus\n3) Ultima");
+            int rematch = robotFleet.fleet(1, sides)
+        // Player will Pick Fighter for the Battle and continue to rematch until Fighter's Health Score is Zero
+            Console.WriteLine("Select RoboFighter.\n1) Maximus\n2 Primus\n3) Ultima");
             int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
             {
@@ -27,15 +30,22 @@ namespace Robots_vs_Dinosaurs
                     robotFleet.robots[2].Attack(dinoHerd.dino[2]);
                     break;
             }
-            return 0;
+            return rematch;
+        }
+        //AttackPower wil be used as variables to determine on who will win the fight
+        public double FinalKill(string Maximus, string Velociraptor)
+        {
+            if (Maximus.AttackPower > Velociraptor.AttackPower)
+            { 
+                Velociraptor.Health--;
 
-            {
 
-            }
+            }   
 
         }
+
         public double PickFighter(Herd herd)
-            //Herd pick selection to fight with Dinosaurs Herd  
+            //Pick Fighter to fight against fleet  
         {
             Console.WriteLine("Please Select DinoFighter.\n1) Velociraptor\n2) Coelophysis\n3) Ankylosaurus");
             int choice = Convert.ToInt32(Console.ReadLine());
