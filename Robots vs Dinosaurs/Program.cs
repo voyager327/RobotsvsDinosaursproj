@@ -10,7 +10,7 @@ namespace Robots_vs_Dinosaurs
     {
         static void Main(string[] args)
         {
-            Simulation sim = new Simulation();
+            Battlefield sim = new Battlefield();
             sim.Run();
         }
     }

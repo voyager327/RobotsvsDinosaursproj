@@ -30,6 +30,11 @@ namespace Robots_vs_Dinosaurs
         {
             dino.Health -= AttackPower;
         }
+        public void Run()
+        {
+
+        }
+
         
     }       
  
